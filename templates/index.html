@@ -5,7 +5,7 @@
                 <header>
                     <div>
                         <h1>{{ posts.title }}</h1>
-                    <div class="about"> Criado por {{ posts['author'] }} em {{ posts['created'] }}</div>
+                    <div class="about"> Criado por {{ posts['author'] }} em {{ posts['created'].strftime('%d-%m-%Y') }}</div>
                     </div>
                 </header>
                 <p class="body"> {{ posts['body'] }}</p>
