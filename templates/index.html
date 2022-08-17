@@ -5,10 +5,10 @@
                 <header>
                     <div>
                         <h1>{{ posts.title }}</h1>
-                    <div class="about"> Criado por{{ post['author'] }} em {{ post['created'] }}</div>
+                    <div class="about"> Criado por {{ posts['author'] }} em {{ posts['created'] }}</div>
                     </div>
                 </header>
-                <p class="body"> {{ post['body'] }}</p>
+                <p class="body"> {{ posts['body'] }}</p>
             </article>
             {% if not loop.last %}
             <hr>
